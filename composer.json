@@ -1,0 +1,28 @@
+{
+    "name": "myciplnew/olapicmedia",
+    "description": "Olapicmedia for download and upload contents",
+    "authors": [
+        {
+            "name": "sheik",
+            "email": "sheik@colanonline.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Myciplnew\\Olapicmedia\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Myciplnew\\Olapicmedia\\OlapicmediaServiceProvider"
+            ]
+        }
+    }
+}
