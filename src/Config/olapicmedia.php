@@ -17,4 +17,5 @@ return [
     'default_user_email' => env('default_user_email'),
     'default_user_password' => env('default_user_password'),
     'olapic_skip_stream_key' => env('OLAPIC_SKIP_STREAM_KEY'),
+    'olapic_bulk_up_dir' => "../../../../Backup-CIPL0107/xampp/htdocs/ummahstars/assets/categoryImages/*.jpg"
 ];
