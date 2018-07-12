@@ -13,7 +13,7 @@
 
 # Commands to execute package
 1) Register user if already not exists. http://localhost:8000/register
-2) Skip #2 and #3 points if already we have data in media tables.
+2) Skip #3 and #4 points if already we have data in media tables.
 3) For upload sample files run the following url. Before that change config/olapicmedia.php file *olapic_bulk_up_dir* path
 4) Parameters (#1 parameter no of images, #2 user id) : http://localhost:8000/blukUpload/2/1 
 5) For upload cron files run *php artisan execute:CronMedia*
