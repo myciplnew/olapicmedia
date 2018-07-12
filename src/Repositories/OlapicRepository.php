@@ -595,7 +595,7 @@ class OlapicRepository implements RepositoryInterface
         }
 
         //Load images from directory
-        $dir = "../../../../Backup-CIPL0107/xampp/htdocs/ummahstars/assets/categoryImages/*.jpg";
+        $dir = Config::get('olapicmedia.olapic_bulk_up_dir');
         $images = glob( $dir );
         $i = 1;
         foreach($images as $newimage)
