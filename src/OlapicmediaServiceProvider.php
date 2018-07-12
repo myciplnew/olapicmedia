@@ -16,7 +16,9 @@ class OlapicmediaServiceProvider extends ServiceProvider
         include __DIR__.'/routes/web.php';
         $this->loadViewsFrom(__DIR__.'/views', 'olapicmedia');
         $this->publishes([
-            __DIR__.'/views' => base_path('resources/views/myciplnew/olapicmedia'),
+            __DIR__.'/Commands' => base_path('app/Console/Commands'),
+            __DIR__.'/Database/Migrations' => base_path('Database/Migrations'),
+            __DIR__.'/Config' => base_path('Config'),
         ]);
     }
 
