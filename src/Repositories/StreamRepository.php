@@ -84,7 +84,7 @@ class StreamRepository implements StreamInterface
                             {
                                 
                                 $defaultUserid = $this->olapicrep->createDefaultUser($data);                                
-                                $this->createMappingUser($defaultUserid, $mediavalue['_embedded']['uploader']['id']);
+                                $this->olapicrep->createMappingUser($defaultUserid, $mediavalue['_embedded']['uploader']['id']);
                                 $checkDefaultUserInfo = User::where('email', Config::get('olapicmedia.default_user_email'))->first();
                             }
                             else

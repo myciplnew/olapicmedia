@@ -12,9 +12,10 @@
 3) composer require league/flysystem-aws-s3-v3:~1.0
 
 # Commands to execute package
-1) Skip #2 and #3 points if already we have data in media tables.
-2) For upload sample files run the following url. Before that change config/olapicmedia.php file *olapic_bulk_up_dir* path
-2) Parameters (#1 parameter no of images, #2 user id) : http://localhost:8000/blukUpload/2/1 
-3) For upload cron files run *php artisan execute:CronMedia*
-4) For download files run *php artisan execute:StreamMedia*
-5) For Validate youtube and instagram files *php artisan execute:ValidateMedia*
+1) Register user if already not exists. http://localhost:8000/register
+2) Skip #2 and #3 points if already we have data in media tables.
+3) For upload sample files run the following url. Before that change config/olapicmedia.php file *olapic_bulk_up_dir* path
+4) Parameters (#1 parameter no of images, #2 user id) : http://localhost:8000/blukUpload/2/1 
+5) For upload cron files run *php artisan execute:CronMedia*
+6) For download files run *php artisan execute:StreamMedia*
+7) For Validate youtube and instagram files *php artisan execute:ValidateMedia*
